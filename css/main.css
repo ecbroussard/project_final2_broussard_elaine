@@ -13,6 +13,9 @@ body {
 header,
 main {
 	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header {
@@ -66,10 +69,10 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1em;
-	width: 30%;
+	width: 40%;
 	background-color: #0055a0;
 	color: white;
-	padding: 1em;
+	padding: 0.5em;
 	font-family: 'Audiowide', cursive;
 	font-size: 120%;
 	text-align: center;
@@ -80,11 +83,7 @@ a {
 }
 
 #swatches {
-	padding: 1em;
-	margin-left: auto;
-	margin-right: auto;
 	padding-bottom: 6%;
-	width: 100%;
 }
 
 #colors li {
@@ -130,19 +129,16 @@ a {
 
 /* Default styles for mobile end here. */
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 900px) {
 
 	#typography {
 		float: left;
 		width: 30%;
-		margin-left: 5%;
-		margin-top: 2%;
 	}
 
 	#swatches {
+		width: 70%;
 		float: right;
-		width: 55%;
-		margin-right: 5%;
 	}
 
 	#colors li {
@@ -155,5 +151,33 @@ a {
 		max-width: 30%;
 		float: left;
 		margin-right: 2%;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+	#typography {
+		float: left;
+		width: 50%;
+	}
+
+	#swatches {
+		width: 50%;
+		float: right;
+	}
+
+	#colors {
+		width: 40%;
+		float: left;
+	}
+
+	#patterns {
+		width: 60%;
+		float: right;
+	}
+
+	#colors li {
+		width: 60%;
+		padding-bottom: 40%;
+		margin: 5%;
 	}
 }
